@@ -1,7 +1,7 @@
-# TERCEIRO TRIMESTRE
+# TERCEIRO trimestre
 
-##identificaçao
+## identificaçao
 Nome: Antonio gabriel lucizano biassi N: 4
 
-##conteudo 
+## conteudo 
 HTML, CSS e javaScriptt
