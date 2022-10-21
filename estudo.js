@@ -31,13 +31,28 @@ function quadrado(){
     document.write("O quadrado de " + i + " é " + (i*i)+ "<br>");
     }
 }
+function moeda(atual){
+    return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
+}
 
 function calcula(){
     let c = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
+    if(!Number(c)){
+alert("o valor do capital deve ser numerico")
+document.getElementById("valor").value ="";
+document.getElementById("valor").focus();
+        return
+    }
+    if(!Number(j)){
+        alert("o valor do juros deve ser numerico")
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+                return
+            }
     let r = c *(1 + (j/100));
-    document.write("resultado: " + r);
+    document.write("resultado: " + moeda(r));
 }
 
 let op = "";
